@@ -318,7 +318,7 @@ namespace PicturesRenaming
             FileStream foto = File.Open(s, FileMode.Open, FileAccess.Read);
             System.Drawing.Image image = new Bitmap(foto);
             
-            TextBox1.Text = GetLatitude(image) + "\n";
+            TextBox1.Text = GetLatitude(image) + "\n"; 
             TextBox1.Text += GetLongitude(image) + "\n";
 
             TextBox1.Text += SearchObject(GetLatitude(image), GetLongitude(image));
